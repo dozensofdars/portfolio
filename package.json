@@ -1,6 +1,6 @@
 {
-  "name": "create-react-app-with-typescript",
-  "version": "4.0.0",
+  "name": "portfolio",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
@@ -15,6 +15,35 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
+    "format": "prettier --write './src/**/*.{ts,tsx,js,jsx}'",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

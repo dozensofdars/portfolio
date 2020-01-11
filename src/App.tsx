@@ -1,9 +1,9 @@
-import React from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
-import ProTip from './ProTip';
+import React from 'react'
+import Container from '@material-ui/core/Container'
+import Typography from '@material-ui/core/Typography'
+import Box from '@material-ui/core/Box'
+import Link from '@material-ui/core/Link'
+import ProTip from './ProTip'
 
 function Copyright() {
   return (
@@ -15,7 +15,7 @@ function Copyright() {
       {new Date().getFullYear()}
       {'.'}
     </Typography>
-  );
+  )
 }
 
 export default function App() {
@@ -29,5 +29,5 @@ export default function App() {
         <Copyright />
       </Box>
     </Container>
-  );
+  )
 }
