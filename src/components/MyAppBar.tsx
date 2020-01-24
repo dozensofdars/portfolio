@@ -29,7 +29,7 @@ const MyAppBar: React.FC<MyAppBarProps> = props => {
   const [open, setOpen] = useState(false)
   const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
-  const classes = useStyles({})
+  const classes = useStyles()
   return (
     <>
       <AppBar position="static">

@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) =>
 )
 
 const DrawerList: React.FC = () => {
-  const classes = useStyles({})
+  const classes = useStyles()
   return (
     <div className={classes.toolbar}>
       <Divider />

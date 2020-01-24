@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@material-ui/core'
 import ProTip from './ProTip'
-import Copyright from './Copyright'
 
 const Content: React.FC = () => (
   <Box>
@@ -9,7 +8,6 @@ const Content: React.FC = () => (
       Create React App v4-beta example with TypeScript
     </Typography>
     <ProTip />
-    <Copyright />
   </Box>
 )
 
