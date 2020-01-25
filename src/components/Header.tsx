@@ -1,17 +1,15 @@
 import React from 'react'
-import header from '../images/header.jpg'
-import { Box, Typography, useMediaQuery } from '@material-ui/core'
-import {
-  makeStyles,
-  createStyles,
-  Theme,
-  useTheme
-} from '@material-ui/core/styles'
+import headerImage from '../images/header.jpg'
+import { Box, Typography } from '@material-ui/core'
+import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
+import data from '../utils/data'
+
+const header = data.header
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     header: {
-      backgroundImage: `url(${header})`,
+      backgroundImage: `url(${headerImage})`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center bottom',
       display: 'flex',
@@ -33,22 +31,14 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const Header: React.FC = () => {
   const classes = useStyles()
-  const theme = useTheme()
-  const mobile = useMediaQuery(theme.breakpoints.down('xs'))
   return (
     <Box className={classes.header}>
       <Box className={classes.headerTextBlock}>
-        <Typography
-          className={classes.headerText}
-          variant={mobile ? 'h3' : 'h1'}
-        >
-          すだ 's Page
+        <Typography className={classes.headerText} variant="h1">
+          {header.title}
         </Typography>
-        <Typography
-          className={classes.headerText}
-          variant={mobile ? 'subtitle1' : 'h4'}
-        >
-          System Engineer
+        <Typography className={classes.headerText} variant="h4">
+          {header.subtitle}
         </Typography>
       </Box>
     </Box>

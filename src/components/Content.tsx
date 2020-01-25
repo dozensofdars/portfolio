@@ -1,14 +1,25 @@
 import React from 'react'
-import { Box, Typography } from '@material-ui/core'
-import ProTip from './ProTip'
+import { Box } from '@material-ui/core'
+import Profile from './Profile'
+import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
+import data from '../utils/data'
+import ContentItem from './ContentItem'
 
-const Content: React.FC = () => (
-  <Box>
-    <Typography variant="h4" component="h1" gutterBottom>
-      Create React App v4-beta example with TypeScript
-    </Typography>
-    <ProTip />
-  </Box>
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    item: { marginBottom: theme.spacing(4) }
+  })
 )
+
+const Content: React.FC = () => {
+  const classes = useStyles()
+  return (
+    <Box>
+      <ContentItem className={classes.item} title={data.profile.title}>
+        <Profile />
+      </ContentItem>
+    </Box>
+  )
+}
 
 export default Content
