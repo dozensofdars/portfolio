@@ -1,11 +1,10 @@
 import React from 'react'
-import { Typography, Box, Paper } from '@material-ui/core'
+import { Typography, Box } from '@material-ui/core'
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    title: { textAlign: 'center' },
-    paper: { padding: theme.spacing(2) }
+    title: { textAlign: 'center' }
   })
 )
 
@@ -22,7 +21,7 @@ const ContentItem: React.FC<ContentItemProps> = props => {
       <Typography className={classes.title} variant="h3" color="textSecondary">
         {props.title}
       </Typography>
-      <Paper className={classes.paper}>{props.children}</Paper>
+      {props.children}
     </Box>
   )
 }

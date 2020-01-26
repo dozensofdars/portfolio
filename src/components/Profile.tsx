@@ -4,7 +4,8 @@ import {
   TableContainer,
   Table,
   TableBody,
-  SvgIconProps
+  SvgIconProps,
+  Paper
 } from '@material-ui/core'
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
 import ProfileRow from './ProfileRow'
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme: Theme) =>
 const Profile: React.FC = () => {
   const classes = useStyles()
   return (
-    <>
+    <Paper className={classes.paper}>
       <TableContainer>
         <Table className={classes.table}>
           <TableBody>
@@ -50,7 +51,7 @@ const Profile: React.FC = () => {
           {desc}
         </Typography>
       ))}
-    </>
+    </Paper>
   )
 }
 
