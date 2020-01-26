@@ -5,7 +5,7 @@ const data = {
   },
   profile: {
     title: 'Profile',
-    data: [
+    items: [
       { avatarIcon: 'Person', title: '名前', body: 'Yuya Sugibuchi' },
       { avatarIcon: 'Event', title: '生年月日', body: '1994/02/26' },
       { avatarIcon: 'Work', title: '職業', body: 'System Engineer' }
@@ -17,15 +17,15 @@ const data = {
   },
   skills: {
     title: 'Skill',
-    data: [
+    items: [
       {
         title: 'フロントエンド',
         description:
           '直近で主に取り組んでいる領域です。Reactをメインで使用しています。',
-        data: [
+        items: [
           {
             title: '言語',
-            data: [
+            items: [
               { icon: 'devicon-javascript-plain', text: 'JavaScript' },
               { icon: 'devicon-typescript-plain', text: 'TypeScript' },
               { icon: 'fas fa-file-code', text: 'HTML/CSS' }
@@ -33,7 +33,7 @@ const data = {
           },
           {
             title: 'フレームワーク',
-            data: [
+            items: [
               { icon: 'devicon-react-original', text: 'React' },
               { icon: 'devicon-react-original', text: 'Redux' },
               { icon: 'devicon-react-original', text: 'Material-UI' },
@@ -47,21 +47,18 @@ const data = {
       {
         title: 'バックエンド',
         description: '直近ではNode.js + expressを使用して開発していました。',
-        data: [
+        items: [
           {
             title: '言語',
-            data: [
-              {
-                icon: 'devicon-nodejs-plain',
-                text: 'JavaScript (Node.js)'
-              },
+            items: [
+              { icon: 'devicon-nodejs-plain', text: 'JavaScript (Node.js)' },
               { icon: 'devicon-ruby-plain', text: 'Ruby' },
               { icon: 'devicon-python-plain', text: 'Python' }
             ]
           },
           {
             title: 'フレームワーク',
-            data: [
+            items: [
               { icon: 'devicon-express-original', text: 'express' },
               { icon: 'devicon-ruby-plain', text: 'Padrino' },
               { icon: 'devicon-ruby-plain', text: 'Sinatra' },
@@ -75,24 +72,21 @@ const data = {
         title: 'ネイティブアプリ',
         description:
           '直近ではAndroidスマートグラス向けアプリを開発していました。',
-        data: [
+        items: [
           {
             title: '言語',
-            data: [
+            items: [
               { icon: 'devicon-java-plain', text: 'Java' },
-              { icon: 'devicon-android-plain', text: 'Kotlin' },
+              { icon: 'kotlin.svg', text: 'Kotlin' },
               { icon: 'devicon-csharp-plain', text: 'C# (WPF)' }
             ]
           },
           {
             title: 'デバイス',
-            data: [
+            items: [
               { icon: 'devicon-android-plain', text: 'Android スマートフォン' },
-              {
-                icon: 'devicon-android-plain',
-                text: 'Android スマートウォッチ'
-              },
-              { icon: 'devicon-android-plain', text: 'Android スマートグラス' },
+              { icon: 'fas fa-clock', text: 'Android スマートウォッチ' },
+              { icon: 'fas fa-glasses', text: 'Android スマートグラス' },
               { icon: 'devicon-windows8-original', text: 'Windows PC' }
             ]
           }
@@ -102,15 +96,12 @@ const data = {
         title: 'その他',
         description:
           '直近ではNode-REDを使ったIoTシステム構築を行っていました。',
-        data: [
+        items: [
           {
             title: '技術領域',
-            data: [
-              { icon: 'devicon-nodejs-plain', text: 'Node-RED' },
-              {
-                icon: 'fab fa-raspberry-pi',
-                text: 'Raspberry Pi'
-              },
+            items: [
+              { icon: 'node-red.svg', text: 'Node-RED' },
+              { icon: 'fab fa-raspberry-pi', text: 'Raspberry Pi' },
               { icon: 'fas fa-wifi', text: 'EnOcean' },
               { icon: 'fas fa-industry', text: 'ロボット・CNC・PLC制御' }
             ]
@@ -120,10 +111,10 @@ const data = {
       {
         title: '開発環境',
         description: 'Dockerで開発環境を立てることが多いです。',
-        data: [
+        items: [
           {
             title: 'ツール',
-            data: [
+            items: [
               { icon: 'devicon-docker-plain', text: 'Docker' },
               { icon: 'devicon-git-plain', text: 'Git' },
               { icon: 'fas fa-desktop', text: 'VirtualBox' },
@@ -133,7 +124,7 @@ const data = {
           },
           {
             title: 'OS',
-            data: [
+            items: [
               { icon: 'devicon-windows8-original', text: 'Windows' },
               { icon: 'devicon-linux-plain', text: 'Linux' }
             ]
@@ -143,10 +134,10 @@ const data = {
       {
         title: '資格',
         description: '社会人になってから取得した資格です。',
-        data: [
+        items: [
           {
             title: '保有資格',
-            data: [
+            items: [
               { icon: 'fas fa-graduation-cap', text: '応用情報技術者' },
               { icon: 'fas fa-graduation-cap', text: 'IoTシステム技術検定中級' }
             ]

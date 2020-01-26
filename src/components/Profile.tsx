@@ -35,7 +35,7 @@ const Profile: React.FC = () => {
       <TableContainer>
         <Table className={classes.table}>
           <TableBody>
-            {profile.data.map(item => (
+            {profile.items.map(item => (
               <ProfileRow
                 key={item.title}
                 title={item.title}

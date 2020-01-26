@@ -33,7 +33,7 @@ const Skill: React.FC = () => {
   const classes = useStyles()
   return (
     <Grid container spacing={2}>
-      {skills.data.map(skill => (
+      {skills.items.map(skill => (
         <Grid item xs={12} sm={6} key={skill.title}>
           <Card>
             <CardContent>
@@ -48,8 +48,8 @@ const Skill: React.FC = () => {
               <Typography variant="body1" gutterBottom>
                 {skill.description}
               </Typography>
-              {skill.data.map((item, i, array) => (
-                <Box>
+              {skill.items.map((item, i, array) => (
+                <Box key={item.title}>
                   <Typography
                     className={classes.title}
                     variant="subtitle1"
@@ -59,13 +59,22 @@ const Skill: React.FC = () => {
                     {item.title}
                   </Typography>
                   <List dense>
-                    {item.data.map(datum => (
-                      <ListItem>
+                    {item.items.map(datum => (
+                      <ListItem key={datum.text}>
                         {datum.icon && (
                           <ListItemIcon>
-                            <i
-                              className={`${classes.listIcon} ${datum.icon}`}
-                            />
+                            {datum.icon.endsWith('.svg') ? (
+                              <object
+                                type="image/svg+xml"
+                                data={`others/${datum.icon}`}
+                                className={classes.listIcon}
+                                aria-label={datum.icon}
+                              />
+                            ) : (
+                              <i
+                                className={`${classes.listIcon} ${datum.icon}`}
+                              />
+                            )}
                           </ListItemIcon>
                         )}
                         <ListItemText className={classes.listItem}>
