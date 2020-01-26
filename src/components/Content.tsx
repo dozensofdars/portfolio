@@ -5,6 +5,7 @@ import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
 import data from '../utils/data'
 import ContentItem from './ContentItem'
 import Skill from './Skill'
+import Works from './Works'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -22,10 +23,9 @@ const Content: React.FC = () => {
       <ContentItem className={classes.item} title={data.skills.title}>
         <Skill />
       </ContentItem>
-      <ContentItem
-        className={classes.item}
-        title={data.works.title}
-      ></ContentItem>
+      <ContentItem className={classes.item} title={data.works.title}>
+        <Works />
+      </ContentItem>
       <ContentItem
         className={classes.item}
         title={data.contact.title}

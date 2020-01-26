@@ -147,7 +147,31 @@ const data = {
     ]
   },
   works: {
-    title: 'Works'
+    title: 'Works',
+    items: [
+      {
+        title: 'Portfolio',
+        description: '本サイトです。',
+        image: 'portfolio',
+        techs: ['TypeScript', 'React', 'Material-UI']
+      },
+      {
+        title: '男子校 Official Web Site',
+        description:
+          '私が活動しているオリジナルバンド「男子校」の公式ホームページです。',
+        image: 'danshikoh',
+        techs: ['WordPress', 'HTML/CSS'],
+        link: 'https://danshikoh.com'
+      },
+      {
+        title: 'Vocaminer',
+        description:
+          '簡単に使えるボカロ曲発掘サービスです。主にバックエンドを担当しました。',
+        image: 'vocaminer',
+        techs: ['Node.js'],
+        link: 'https://yumuta.github.io/vocaminer/'
+      }
+    ]
   },
   contact: {
     title: 'Contact'
