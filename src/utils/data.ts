@@ -65,6 +65,13 @@ const data = {
               { icon: 'devicon-rails-plain', text: 'Rails' },
               { icon: 'devicon-python-plain', text: 'Flask' }
             ]
+          },
+          {
+            title: 'データベース',
+            items: [
+              { icon: 'devicon-postgresql-plain', text: 'PostgreSQL' },
+              { icon: 'devicon-mongodb-plain', text: 'mongoDB' }
+            ]
           }
         ]
       },
@@ -103,6 +110,9 @@ const data = {
               { icon: 'node-red.svg', text: 'Node-RED' },
               { icon: 'fab fa-raspberry-pi', text: 'Raspberry Pi' },
               { icon: 'fas fa-wifi', text: 'EnOcean' },
+              { icon: 'fas fa-wifi', text: 'MQTT' },
+              { icon: 'fas fa-wifi', text: 'WebSocket' },
+              { icon: 'fas fa-video', text: 'WebRTC' },
               { icon: 'fas fa-industry', text: 'ロボット・CNC・PLC制御' }
             ]
           }
@@ -158,9 +168,9 @@ const data = {
       {
         title: '男子校 Official Web Site',
         description:
-          '私が活動しているオリジナルバンド「男子校」の公式ホームページです。',
+          '私が活動しているオリジナルバンド「男子校」の公式ホームページです。制作・運用を担当しています。',
         image: 'danshikoh',
-        techs: ['WordPress', 'HTML/CSS'],
+        techs: ['WordPress', 'HTML', 'CSS'],
         link: 'https://danshikoh.com'
       },
       {
@@ -170,6 +180,51 @@ const data = {
         image: 'vocaminer',
         techs: ['Node.js'],
         link: 'https://yumuta.github.io/vocaminer/'
+      },
+      {
+        title: 'スマートホーム',
+        description:
+          '自宅でGoogle HomeやRaspberry Piを活用し、スマホから家電の電源を入れたり、Slackに投稿したメッセージをGoogle Homeに喋らせたりといったシステムを構築しています。知見はQiitaにも投稿しています。',
+        image: 'nodered',
+        techs: [
+          'Node-RED',
+          'Node-RED Dashboard',
+          'Raspberry Pi',
+          'Google Home',
+          'Slack Apps'
+        ],
+        link: 'https://qiita.com/dozensofdars/items/43ec9e51cc3e33239e5c'
+      },
+      {
+        title: '(業務) スマートウォッチを活用した作業者通知システム',
+        description:
+          '工場の設備異常等をスマートウォッチで作業者へリアルタイムで通知し、ダウンタイムを削減するシステムです。バックエンド・モバイル(Android)・フロントエンド開発を担当しました。',
+        techs: [
+          'Ruby',
+          'Padrino',
+          'PostgreSQL',
+          'MQTT',
+          'Java',
+          'HTML(erb)',
+          'CSS',
+          'jQuery',
+          'Bootstrap'
+        ]
+      },
+      {
+        title: '(業務) スマートグラスを活用した作業者遠隔支援システム',
+        description:
+          'スマートグラスを活用して工場作業者に遠隔支援を行うシステムです。主にバックエンド・モバイル(Android)・一部フロントエンド開発を担当しました。',
+        techs: [
+          'Node.js',
+          'express',
+          'WebSocket',
+          'WebRTC',
+          'Java',
+          'HTML(jade)',
+          'CSS',
+          'jQuery'
+        ]
       }
     ]
   },

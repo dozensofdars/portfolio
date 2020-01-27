@@ -1,6 +1,6 @@
 import red from '@material-ui/core/colors/red'
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles'
-import { amber, grey, orange } from '@material-ui/core/colors'
+import { green, grey, orange } from '@material-ui/core/colors'
 
 // A custom theme for this app
 const theme = responsiveFontSizes(
@@ -10,7 +10,7 @@ const theme = responsiveFontSizes(
         main: orange[500]
       },
       secondary: {
-        main: amber.A400
+        main: green.A700
       },
       error: {
         main: red.A400
