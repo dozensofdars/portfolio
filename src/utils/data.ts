@@ -126,6 +126,10 @@ const data = {
             title: 'ツール',
             items: [
               { icon: 'devicon-docker-plain', text: 'Docker' },
+              {
+                icon: 'devicon-visualstudio-plain',
+                text: 'Visual Studio Code'
+              },
               { icon: 'devicon-git-plain', text: 'Git' },
               { icon: 'fas fa-desktop', text: 'VirtualBox' },
               { icon: 'fas fa-desktop', text: 'Hyper-V' },
