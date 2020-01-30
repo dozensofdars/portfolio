@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://dozensofdars.github.io/portfolio",
   "dependencies": {
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.5.1",
@@ -15,6 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "serve": "serve -s build -l 3000",
     "test": "react-scripts test",
     "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
@@ -34,6 +36,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "gh-pages": "^2.2.0",
     "prettier": "^1.19.1",
     "serve": "^11.3.0"
   },
