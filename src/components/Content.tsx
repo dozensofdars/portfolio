@@ -6,6 +6,7 @@ import data from '../utils/data'
 import ContentItem from './ContentItem'
 import Skill from './Skill'
 import Works from './Works'
+import Contact from './Contact'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -26,10 +27,9 @@ const Content: React.FC = () => {
       <ContentItem className={classes.item} title={data.works.title}>
         <Works />
       </ContentItem>
-      <ContentItem
-        className={classes.item}
-        title={data.contact.title}
-      ></ContentItem>
+      <ContentItem className={classes.item} title={data.contact.title}>
+        <Contact />
+      </ContentItem>
     </Box>
   )
 }

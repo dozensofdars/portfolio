@@ -161,7 +161,7 @@ const data = {
     items: [
       {
         title: 'Portfolio',
-        description: '本サイトです。',
+        description: '本サイトです。実装ではDataとViewの分離を意識しています。',
         image: 'portfolio',
         techs: ['TypeScript', 'React', 'Material-UI']
       },
@@ -229,7 +229,19 @@ const data = {
     ]
   },
   contact: {
-    title: 'Contact'
+    title: 'Contact',
+    twitter: {
+      name: '@dozensofdars',
+      link: 'https://twitter.com/dozensofdars'
+    },
+    qiita: {
+      name: '@dozensofdars',
+      link: 'https://qiita.com/dozensofdars'
+    },
+    github: {
+      name: 'dozensofdars',
+      link: 'https://github.com/dozensofdars'
+    }
   },
   copyright: { name: 'dozensofdars', link: 'https://github.com/dozensofdars' }
 }
