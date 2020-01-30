@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://dozensofdars.github.io/portfolio",
+  "homepage": "https://dozensofdars.github.io/portfolio/",
   "dependencies": {
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.5.1",
