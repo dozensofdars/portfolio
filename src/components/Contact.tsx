@@ -1,12 +1,10 @@
 import React from 'react'
 import { Grid, Link } from '@material-ui/core'
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
-import data from '../utils/data'
+import { Contact as IContact } from '../utils/data'
 import twitter from '../images/twitter.png'
 import github from '../images/github.png'
 import qiita from '../images/qiita.png'
-
-const contact = data.contact
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -16,7 +14,9 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const Contact: React.FC = () => {
+type ContactProps = { contact: IContact }
+
+const Contact: React.FC<ContactProps> = ({ contact }) => {
   const classes = useStyles()
   return (
     <Grid container>

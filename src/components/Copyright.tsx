@@ -1,10 +1,10 @@
 import React from 'react'
 import { Typography, Link } from '@material-ui/core'
-import data from '../utils/data'
+import { Copyright as ICopyright } from '../utils/data'
 
-const copyright = data.copyright
+type CopyrightProps = { copyright: ICopyright }
 
-const Copyright: React.FC = () => (
+const Copyright: React.FC<CopyrightProps> = ({ copyright }) => (
   <Typography variant="body2" color="textSecondary" align="center">
     {'Copyright © '}
     <Link color="inherit" href={copyright.link}>

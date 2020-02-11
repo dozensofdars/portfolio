@@ -12,9 +12,7 @@ import {
   ListItemIcon
 } from '@material-ui/core'
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
-import data from '../utils/data'
-
-const skills = data.skills
+import { Skills } from '../utils/data'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -29,7 +27,9 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const Skill: React.FC = () => {
+type SkillProps = { skills: Skills }
+
+const Skill: React.FC<SkillProps> = ({ skills }) => {
   const classes = useStyles()
   return (
     <Grid container spacing={2}>

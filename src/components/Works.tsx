@@ -10,7 +10,7 @@ import {
   Button
 } from '@material-ui/core'
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
-import data from '../utils/data'
+import { Works as IWorks } from '../utils/data'
 import danshikoh from '../images/danshikoh.png'
 import portfolio from '../images/portfolio.png'
 import vocaminer from '../images/vocaminer.png'
@@ -23,8 +23,6 @@ const images: Record<string, string> = {
   nodered
 }
 
-const works = data.works
-
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     center: { textAlign: 'center' },
@@ -34,7 +32,9 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const Works: React.FC = () => {
+type WorksProps = { works: IWorks }
+
+const Works: React.FC<WorksProps> = ({ works }) => {
   const classes = useStyles()
   return (
     <Grid container spacing={2}>

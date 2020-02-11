@@ -9,10 +9,8 @@ import {
 } from '@material-ui/core'
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
 import ProfileRow from './ProfileRow'
-import data from '../utils/data'
 import { Person, Event, Work } from '@material-ui/icons'
-
-const profile = data.profile
+import { Profile as IProfile } from '../utils/data'
 
 const icons: Record<string, (props: SvgIconProps) => JSX.Element> = {
   Person,
@@ -28,7 +26,9 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const Profile: React.FC = () => {
+type ProfileProps = { profile: IProfile }
+
+const Profile: React.FC<ProfileProps> = ({ profile }) => {
   const classes = useStyles()
   return (
     <Paper className={classes.paper}>

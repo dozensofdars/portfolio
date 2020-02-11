@@ -2,9 +2,7 @@ import React from 'react'
 import headerImage from '../images/header.jpg'
 import { Box, Typography } from '@material-ui/core'
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
-import data from '../utils/data'
-
-const header = data.header
+import { Header as IHeader } from '../utils/data'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -29,7 +27,9 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 )
 
-const Header: React.FC = () => {
+type HeaderProps = { header: IHeader }
+
+const Header: React.FC<HeaderProps> = ({ header }) => {
   const classes = useStyles()
   return (
     <Box className={classes.header}>
