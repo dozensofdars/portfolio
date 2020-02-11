@@ -4,14 +4,14 @@
   "private": true,
   "homepage": "https://dozensofdars.github.io/portfolio/",
   "dependencies": {
-    "@material-ui/core": "latest",
+    "@material-ui/core": "^4.9.2",
     "@material-ui/icons": "^4.5.1",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
     "react": "latest",
     "react-dom": "latest",
-    "react-scripts": "latest",
-    "typescript": "latest"
+    "react-scripts": "^3.3.1",
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "start": "react-scripts start",
