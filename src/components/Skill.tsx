@@ -66,7 +66,7 @@ const Skill: React.FC<SkillProps> = ({ skills }) => {
                             {datum.icon.endsWith('.svg') ? (
                               <object
                                 type="image/svg+xml"
-                                data={`others/${datum.icon}`}
+                                data={`${process.env.PUBLIC_URL}/others/${datum.icon}`}
                                 className={classes.listIcon}
                                 aria-label={datum.icon}
                               />

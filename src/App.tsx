@@ -19,7 +19,9 @@ const useStyles = makeStyles((theme: Theme) =>
 const App: React.FC = () => {
   const [data, setData] = useState<Data | null>(null)
   useEffect(() => {
-    Axios.get('./data.json').then(res => setData(res.data))
+    Axios.get(`${process.env.PUBLIC_URL}/data.json`).then(res =>
+      setData(res.data)
+    )
   }, [])
   const classes = useStyles()
   return !data ? (
