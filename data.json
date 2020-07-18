@@ -1,11 +1,26 @@
 {
-  "header": { "title": "Yuya Sugibuchi", "subtitle": "Portfolio" },
+  "header": {
+    "title": "Yuya Sugibuchi",
+    "subtitle": "Portfolio"
+  },
   "profile": {
     "title": "Profile",
     "items": [
-      { "avatarIcon": "Person", "title": "名前", "body": "Yuya Sugibuchi" },
-      { "avatarIcon": "Event", "title": "生年月日", "body": "1994/02/26" },
-      { "avatarIcon": "Work", "title": "職業", "body": "System Engineer" }
+      {
+        "avatarIcon": "Person",
+        "title": "名前",
+        "body": "Yuya Sugibuchi"
+      },
+      {
+        "avatarIcon": "Event",
+        "title": "生年月日",
+        "body": "1994/02/26"
+      },
+      {
+        "avatarIcon": "Work",
+        "title": "職業",
+        "body": "System Engineer"
+      }
     ],
     "descriptions": [
       "東京大学大学院情報理工学系研究科修士課程修了。2018年に独立系システムインテグレータに入社し、製造業向けの自社製品の設計・開発に携わっています。",
@@ -22,20 +37,51 @@
           {
             "title": "言語",
             "items": [
-              { "icon": "devicon-javascript-plain", "text": "JavaScript" },
-              { "icon": "devicon-typescript-plain", "text": "TypeScript" },
-              { "icon": "fas fa-file-code", "text": "HTML/CSS" }
+              {
+                "icon": "devicon-javascript-plain",
+                "text": "JavaScript"
+              },
+              {
+                "icon": "devicon-typescript-plain",
+                "text": "TypeScript"
+              },
+              {
+                "icon": "fas fa-file-code",
+                "text": "HTML/CSS"
+              }
             ]
           },
           {
             "title": "フレームワーク",
             "items": [
-              { "icon": "devicon-react-original", "text": "React" },
-              { "icon": "devicon-react-original", "text": "Redux" },
-              { "icon": "devicon-react-original", "text": "Material-UI" },
-              { "icon": "devicon-vuejs-plain", "text": "Vue" },
-              { "icon": "devicon-jquery-plain", "text": "jQuery" },
-              { "icon": "devicon-bootstrap-plain", "text": "Bootstrap" }
+              {
+                "icon": "devicon-react-original",
+                "text": "React"
+              },
+              {
+                "icon": "devicon-react-original",
+                "text": "Redux"
+              },
+              {
+                "icon": "devicon-react-original",
+                "text": "Gatsby"
+              },
+              {
+                "icon": "devicon-react-original",
+                "text": "Material-UI"
+              },
+              {
+                "icon": "devicon-vuejs-plain",
+                "text": "Vue"
+              },
+              {
+                "icon": "devicon-jquery-plain",
+                "text": "jQuery"
+              },
+              {
+                "icon": "devicon-bootstrap-plain",
+                "text": "Bootstrap"
+              }
             ]
           }
         ]
@@ -51,25 +97,52 @@
                 "icon": "devicon-nodejs-plain",
                 "text": "JavaScript (Node.js)"
               },
-              { "icon": "devicon-ruby-plain", "text": "Ruby" },
-              { "icon": "devicon-python-plain", "text": "Python" }
+              {
+                "icon": "devicon-ruby-plain",
+                "text": "Ruby"
+              },
+              {
+                "icon": "devicon-python-plain",
+                "text": "Python"
+              }
             ]
           },
           {
             "title": "フレームワーク",
             "items": [
-              { "icon": "devicon-express-original", "text": "express" },
-              { "icon": "devicon-ruby-plain", "text": "Padrino" },
-              { "icon": "devicon-ruby-plain", "text": "Sinatra" },
-              { "icon": "devicon-rails-plain", "text": "Rails" },
-              { "icon": "devicon-python-plain", "text": "Flask" }
+              {
+                "icon": "devicon-express-original",
+                "text": "express"
+              },
+              {
+                "icon": "devicon-ruby-plain",
+                "text": "Padrino"
+              },
+              {
+                "icon": "devicon-ruby-plain",
+                "text": "Sinatra"
+              },
+              {
+                "icon": "devicon-rails-plain",
+                "text": "Rails"
+              },
+              {
+                "icon": "devicon-python-plain",
+                "text": "Flask"
+              }
             ]
           },
           {
             "title": "データベース",
             "items": [
-              { "icon": "devicon-postgresql-plain", "text": "PostgreSQL" },
-              { "icon": "devicon-mongodb-plain", "text": "mongoDB" }
+              {
+                "icon": "devicon-postgresql-plain",
+                "text": "PostgreSQL"
+              },
+              {
+                "icon": "devicon-mongodb-plain",
+                "text": "mongoDB"
+              }
             ]
           }
         ]
@@ -81,9 +154,18 @@
           {
             "title": "言語",
             "items": [
-              { "icon": "devicon-java-plain", "text": "Java" },
-              { "icon": "kotlin.svg", "text": "Kotlin" },
-              { "icon": "devicon-csharp-plain", "text": "C# (WPF)" }
+              {
+                "icon": "devicon-java-plain",
+                "text": "Java"
+              },
+              {
+                "icon": "kotlin.svg",
+                "text": "Kotlin"
+              },
+              {
+                "icon": "devicon-csharp-plain",
+                "text": "C# (WPF)"
+              }
             ]
           },
           {
@@ -93,9 +175,18 @@
                 "icon": "devicon-android-plain",
                 "text": "Android スマートフォン"
               },
-              { "icon": "fas fa-clock", "text": "Android スマートウォッチ" },
-              { "icon": "fas fa-glasses", "text": "Android スマートグラス" },
-              { "icon": "devicon-windows8-original", "text": "Windows PC" }
+              {
+                "icon": "fas fa-clock",
+                "text": "Android スマートウォッチ"
+              },
+              {
+                "icon": "fas fa-glasses",
+                "text": "Android スマートグラス"
+              },
+              {
+                "icon": "devicon-windows8-original",
+                "text": "Windows PC"
+              }
             ]
           }
         ]
@@ -107,13 +198,34 @@
           {
             "title": "技術領域",
             "items": [
-              { "icon": "node-red.svg", "text": "Node-RED" },
-              { "icon": "fab fa-raspberry-pi", "text": "Raspberry Pi" },
-              { "icon": "fas fa-wifi", "text": "EnOcean" },
-              { "icon": "fas fa-wifi", "text": "MQTT" },
-              { "icon": "fas fa-wifi", "text": "WebSocket" },
-              { "icon": "fas fa-video", "text": "WebRTC" },
-              { "icon": "fas fa-industry", "text": "ロボット・CNC・PLC制御" }
+              {
+                "icon": "node-red.svg",
+                "text": "Node-RED"
+              },
+              {
+                "icon": "fab fa-raspberry-pi",
+                "text": "Raspberry Pi"
+              },
+              {
+                "icon": "fas fa-wifi",
+                "text": "EnOcean"
+              },
+              {
+                "icon": "fas fa-wifi",
+                "text": "MQTT"
+              },
+              {
+                "icon": "fas fa-wifi",
+                "text": "WebSocket"
+              },
+              {
+                "icon": "fas fa-video",
+                "text": "WebRTC"
+              },
+              {
+                "icon": "fas fa-industry",
+                "text": "ロボット・CNC・PLC制御"
+              }
             ]
           }
         ]
@@ -125,22 +237,43 @@
           {
             "title": "ツール",
             "items": [
-              { "icon": "devicon-docker-plain", "text": "Docker" },
+              {
+                "icon": "devicon-docker-plain",
+                "text": "Docker"
+              },
               {
                 "icon": "devicon-visualstudio-plain",
                 "text": "Visual Studio Code"
               },
-              { "icon": "devicon-git-plain", "text": "Git" },
-              { "icon": "fas fa-desktop", "text": "VirtualBox" },
-              { "icon": "fas fa-desktop", "text": "Hyper-V" },
-              { "icon": "fas fa-desktop", "text": "Vagrant" }
+              {
+                "icon": "devicon-git-plain",
+                "text": "Git"
+              },
+              {
+                "icon": "fas fa-desktop",
+                "text": "VirtualBox"
+              },
+              {
+                "icon": "fas fa-desktop",
+                "text": "Hyper-V"
+              },
+              {
+                "icon": "fas fa-desktop",
+                "text": "Vagrant"
+              }
             ]
           },
           {
             "title": "OS",
             "items": [
-              { "icon": "devicon-windows8-original", "text": "Windows" },
-              { "icon": "devicon-linux-plain", "text": "Linux" }
+              {
+                "icon": "devicon-windows8-original",
+                "text": "Windows"
+              },
+              {
+                "icon": "devicon-linux-plain",
+                "text": "Linux"
+              }
             ]
           }
         ]
@@ -152,7 +285,10 @@
           {
             "title": "保有資格",
             "items": [
-              { "icon": "fas fa-graduation-cap", "text": "応用情報技術者" },
+              {
+                "icon": "fas fa-graduation-cap",
+                "text": "応用情報技術者"
+              },
               {
                 "icon": "fas fa-graduation-cap",
                 "text": "IoTシステム技術検定中級"
@@ -170,20 +306,31 @@
         "title": "Portfolio",
         "description": "本サイトです。実装ではDataとViewの分離を意識しています。",
         "image": "portfolio",
-        "techs": ["TypeScript", "React", "Material-UI"]
+        "techs": [
+          "TypeScript",
+          "React"
+        ]
       },
       {
         "title": "男子校 Official Web Site",
         "description": "私が活動しているオリジナルバンド「男子校」の公式ホームページです。制作・運用を担当しています。",
         "image": "danshikoh",
-        "techs": ["WordPress", "HTML", "CSS"],
+        "techs": [
+          "TypeScript",
+          "React",
+          "Gatsby",
+          "Netlify",
+          "microCMS"
+        ],
         "link": "https://danshikoh.com"
       },
       {
         "title": "Vocaminer",
         "description": "簡単に使えるボカロ曲発掘サービスです。主にバックエンドを担当しました。",
         "image": "vocaminer",
-        "techs": ["Node.js"],
+        "techs": [
+          "Node.js"
+        ],
         "link": "https://yumuta.github.io/vocaminer/"
       },
       {
